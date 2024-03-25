@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Plant</title>
+  </head>
+  <body class="overflow-hidden">
+    <div class="w-full h-full">
+      <img
+        src="./6_folwer_cut.png"
+        alt=""
+        class="absolute bottom-0 right-0 z-[-1] max-w-[50%] mx-auto xl:max-w-[600px]"
+      />
+      <nav class="flex justify-between items-center h-24 px-10 xl:px-36">
+        <img src="./Logo.svg" alt="" />
+        <ul class="hidden lg:flex gap-16">
+          <li class="font-bold underline">Home</li>
+          <li class="font-bold">Collection</li>
+          <li class="font-bold">Shop</li>
+          <li class="font-bold">About</li>
+          <li class="font-bold">Contact</li>
+        </ul>
+        <div class="flex gap-6 items-center">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-bars lg:hidden"></i>
+        </div>
+      </nav>
+      
+      <main class="pl-10 xl:pl-24 h-[500px] xl:h-[700px] flex justify-center w-[400px] md:w-[600px] xl:w-[900px] flex-col gap-6 items-start">
+        <h1 class="text-5xl md:text-6xl lg:7xl xl:text-8xl font-bold font-sans">MONSTERA</h1>
+        <p class="text-lg xl:text-1xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam corrupti amet vel ipsum, id placeat harum optio ipsam natus voluptate porro quibusdam. Voluptatem, amet soluta.</p>
+        <button class="bg-green-900 rounded-full pt-4 pb-4 pr-10 pl-10 text-3xl text-white font-bold">Discover<i class="fa-solid fa-greater-than ml-5"></i></button>
+      </main>
+      
+      <div class="hidden xl:flex gap-6 px-3">
+        <div class="flex w-[300px] items-center gap-2">
+          <i class="fa-solid fa-water text-7xl"></i>
+          <div>
+            <h3 class="text-2xl font-bold">Feeding</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="flex w-[300px] items-center gap-2">
+          <i class="fa-regular fa-lightbulb text-7xl"></i>
+          <div>
+            <h3 class="text-2xl font-bold">Light</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="flex w-[300px] items-center gap-2">
+          <i class="fa-solid fa-spoon text-7xl"></i>
+          <div>
+            <h3 class="text-2xl font-bold">Care</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
